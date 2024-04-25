@@ -1,17 +1,26 @@
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavBar from '../components/NavBar'
 
 
 export default function HomePage(props) {
 
+    //state
     const[userName, setUserName] = useState("");
     const[password, setPassword] = useState("");
 
+    //life cycle hook
+    useEffect(()=>{
+        console.log("hellooooooooo");
+    });
+
+
+    //arrow function
     const printState=()=>{
         console.log(userName);
         console.log(password);
     }
+
 
   return (
     <View>
