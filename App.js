@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from './screens/Home'
+import AddData from './screens/AddData'
 
 export default function App() {
   return (
-      <Home/>
+      <AddData/>
   )
 }
