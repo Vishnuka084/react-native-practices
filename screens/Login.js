@@ -24,12 +24,15 @@ const styles = StyleSheet.create({
         padding:10,
         borderWidth:1,
         width:'80%',
+        borderRadius:100
+        
     },
     input2:{
         marginTop:'2%',
         padding:10,
         borderWidth:1,
         width:'80%',
+        borderRadius:100
     },
     container:{
         justifyContent:'center',
