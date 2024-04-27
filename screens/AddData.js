@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Input, NativeBaseProvider,Text, VStack } from 'native-base'
+import { Alert } from 'react-native';
 
 export default function AddData() {
     const[title, setTitle] = useState('');
@@ -18,8 +19,8 @@ export default function AddData() {
               'Content-type': 'application/json; charset=UTF-8',
             },
           })
-            .then((response) => response.json())
-            .then((json) => console.log(json));
+            .then((response) => {Alert.alert("Save Saved Succesfully")})
+            .catch((err)=>{Alert.alert("Error occured")})
     }
 
   return (
